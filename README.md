@@ -5,27 +5,47 @@ Na primeira tela há o título, uma solicitação de leitura do contrato, e se d
 O arquivo para comunicação da NodeMCU deve ser modificado para o correto funcionamento
 
 //----------------WiFi------------------------------------ 
+
 const char* SSID =  "COLOQUE AQUI O NOME DA SUA REDE WI-FI"
+
 const char* PASSWORD = "coloque aqui sua senha"
+
 WiFiClient wifiClient; 
+
 //----------------------Mqtt-------------------------------
+
 const char* BROKER_MQTT = "COLOQUE AQUI A URL DO SEU BROKER (A QUE JÁ ESTÁ NO CÓDIGO FUNCIONA com o modo default do app)";  //broker MQTT URL
-int BROKER_PORT = coloque aqui a porta (a que já está no código funciona com o modo default do app                    // Broker MQTT port
+
+int BROKER_PORT = coloque aqui a porta (a que já está no código funciona com o modo default do app );                   // Broker MQTT port
+
+
 
 //-------- defines -------------------------------------------
+
 #define ID_MQTT  "COLOQUE AQUI O ID do CLIENTE (qualquer nome, mas necessariamente diferente dos demais conectados)"             //ID for this node
 
 //substitua o seu caminho em  "topico/routeExample/";        (ESTE CAMINHO FUNCIONA COM O MODO DEFAULT DO APP)
+
 //paste your route for the topic in "topico/routeExample/";
 
-const char* substopic[] ={"topico/routeExample/sw1",   //#0    (sw1~sw8 são os tópicos para o app, porém podem ser modificados para outras aplicações)
-                          "topico/routeExample/sw2",   //#1
-                          "topico/routeExample/sw3",   //#2
-                          "topico/routeExample/sw4",   //#3
-                          "topico/routeExample/sw5",   //#4
-                          "topico/routeExample/sw6",   //#5
-                          "topico/routeExample/sw7",   //#6
-                          "topico/routeExample/sw8"    //#7
-                                           };
+const char* substopic[] ={
+
+"topico/routeExample/sw1",   //#0    (sw1~sw8 são os tópicos para o app, porém podem ser modificados para outras aplicações)
+
+"topico/routeExample/sw2",   //#1
+
+"topico/routeExample/sw3",   //#2
+
+"topico/routeExample/sw4",   //#3
+
+"topico/routeExample/sw5",   //#4
+
+"topico/routeExample/sw6",   //#5
+
+"topico/routeExample/sw7",   //#6
+
+"topico/routeExample/sw8"    //#7
+
+};
 
 
