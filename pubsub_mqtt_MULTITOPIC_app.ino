@@ -4,8 +4,8 @@
 #include <user_interface.h> //lib to use timer 
   
 //----------------WiFi------------------------------------ 
-const char* SSID =  "OP1_3'9";          //WiFi name SSID
-const char* PASSWORD = "j4v4l1j4v4l1";    //WIFi password
+const char* SSID =  "AAAAAAAAAAAAAAAAAAA";          //WiFi name SSID
+const char* PASSWORD = "****************";    //WIFi password
 WiFiClient wifiClient; 
 //----------------------Mqtt-------------------------------
 //const char* BROKER_MQTT = "192.168.0.80";  //broker MQTT IP
@@ -18,7 +18,7 @@ PubSubClient client (BROKER_MQTT, BROKER_PORT, wifiClient); //instace fully conf
 
 
 //-------- defines -------------------------------------------
-#define ID_MQTT  "Noh01"             //ID for this node
+#define ID_MQTT  "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"             //ID for this node
 #define TOPIC_PUBLISH0   "PNoh01_0"  //button topic 
 #define TOPIC_PUBLISH3   "PNoh01_A"  //analogic topic
 //pin define
