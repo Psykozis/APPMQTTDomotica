@@ -1,3 +1,16 @@
+/*
+* pubsub_mqtt_MULTITOPIC_APP.INO
+* Marlon Soares Sigales
+* 
+* Código para NodeMCU se subscrever e publicar em tópicos em um Broker controlando suas saídas digitais, em específico para comunicar com o app deste repositório
+* 30/09/2020
+* 
+* Utilizado lib PubSubClient=> pubsubclient.knolleary.net/
+* 
+* Este projeto pode ser utilizado, modificado sem fins comerciais desde que referênciado.
+*/
+
+
 //---------------includes--------------------------------
 #include <ESP8266WiFi.h> 
 #include <PubSubClient.h>
