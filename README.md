@@ -1,8 +1,16 @@
 #CHAVES PARA CENTRAL DE DOMÓTICA UTILIZANDO MQTT
 
+O aplicativo foi desenvolvido utilizando o APP inventor do MIT. O código mqtt.aia é o fonte que pode ser importado lá para reprodução.
+Caso necessário importar a extensão para o MQTT, ela está presente em http://www.ullisroboterseite.de/android-AI2-MQTT-en.html#use, basta baixar e importar conforme descrito no vídeo https://www.youtube.com/watch?v=H75d3JlNSV4.
+
 Na primeira tela há o título, uma solicitação de leitura do contrato, e se de acordo o usuário ao marcar a check box é direcionado para a segunda tela onde é feita a configuração do broker, como exemplo pode ser deixado com os valores default, onde o broker padrão é livre. Ao se clicar em conectar, somos direcionados à ultima página, nela a ‘mágica’ acontece, dividida em três regiões, na parte inferior o botão configurar nos direciona para a página anterior, para ajustes no broker, acima deste são mostradas as configurações após primeira conexão. Acima das configurações está o botão de conectar, quando ele está verde, significa que está conectado e o cliente está acessando ao broker, quando ele está cinza significa que a comunicação foi interrompida, propositalmente ou não, e que é necessário clicar nele novamente para estabelecer nova comunicação. Sempre que estiver conectado, os check boxes da parte superior quando acionados ou des-acionados, enviam valores para os respectivos tópicos (sw1 à sw8 dentro do caminho especificado) que serão acessados pela placa e acionados ou não. Abaixo destes existem sliders que mostram como a informação está no servidor, e como deveria estar na placa e em todos os clientes que estão inscritos neste tópico.
 
-O arquivo para comunicação da NodeMCU deve ser modificado para o correto funcionamento
+
+
+
+
+Para o firmware da NodeMCU foi utilizado a linguagem c, através da IDE arduíno. E também a biblioteca pubsubclient para comunicação MQTT https://pubsubclient.knolleary.net/.
+O arquivo para comunicação da NodeMCU deve ser modificado nas seguintes pontos para o correto :
 
 //----------------WiFi------------------------------------ 
 
